@@ -1,0 +1,51 @@
+<html>
+<body>
+    <script type="text/javascript">
+        function publishAndChange(text) {
+            //changing text on button click
+            document.getElementById('onclickpublish').innerHTML=text;
+            //calling script publish.js on button click
+            var button = document.getElementById('publishData');
+            button.onclick = function(){
+                
+            }
+        }
+        function stopAndChange(text) {
+            document.getElementById('onclickstop').innerHTML=text;
+        }
+        function viewAndChange(text) {
+            document.getElementById('onclickview').innerHTML=text;
+        }
+    </script>
+<h1>Welcome to MAM Demo</h1>
+<tablle>
+    <tr>
+        <td>
+            <input type="button" id="publishData" value="Publish Data" onclick="publishAndChange('The Data is being published');"/>
+        </td>
+        <td>
+            <p id="onclickpublish">Click the Button to publish data</p>
+        </td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td>
+            <input type="button" id="publishData" value="Stop Publishing" onclick="stopAndChange('The Publishing is stopped');"/>
+        </td>
+        <td>
+            <p id="onclickstop">Click the Button to stop publishing data</p>
+        </td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td>
+            <input type="button" id="publishData" value="View Data" onclick="viewAndChange('The Data is Here!');"/>
+        </td>
+        <td>
+            <p id="onclickview">Click the Button to View Data</p>
+        </td>
+    </tr>
+    <tr></tr>
+</tablle>
+</body>
+</html>
